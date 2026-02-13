@@ -44,5 +44,6 @@ jobs:
           
       - uses: actions/upload-artifact@v6.0.0
         with:
+          name: ${{ matrix.os && matrix.platform}} 
           path: build
-          include-hidden-files: true
+          include-hidden-files: false
